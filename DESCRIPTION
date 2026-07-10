@@ -28,6 +28,6 @@ Collate: 'AllClasses.R' 'AllGeneric.R' 'methods-IcaSet.R'
         'methods-MineICAParams.R' 'compareAnalysis.R'
         'functions_comp2annot.R' 'functions_comp2annottests.R'
         'functions_enrich.R' 'functions.R' 'heatmap.plus.R'
-        'heatmapsOnSel.R' 'runAn.R' 'compareGenes.R'
+        'heatmapsOnSel.R' 'runAn.R' 'compareGenes.R' 'zzz.R'
 biocViews: Visualization, MultipleComparison
 PackageStatus: Deprecated
