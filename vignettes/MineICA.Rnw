@@ -412,7 +412,7 @@ sort(abs(contrib[[1]]),decreasing=TRUE)[1:10]
 sort(abs(contrib[[3]]),decreasing=TRUE)[1:10]
 @
 
-<<selectContribGenes, eval=FALSE>>=
+<<selectContribGenes2, eval=FALSE>>=
 ## One can also want to apply different cutoffs depending on the components
 ## for example using the first 4 components:
 contrib <- selectContrib(icaSetMainz[,,1:4], cutoff=c(4,4,4,3), level="genes")
@@ -446,7 +446,7 @@ keepVar <- c("age","er","grade")
 icaSetMainz$er <- c("0"="ER-","1"="ER+")[as.character(icaSetMainz$er)]
 icaSetMainz$grade <- as.character(icaSetMainz$grade)
 @ 
-<<runAn, echo=TRUE, eval=FALSE, print=FALSE>>=
+<<runAn2, echo=TRUE, eval=FALSE, print=FALSE>>=
 ## Run the analysis of the ICA decomposition
 # only enrichment in KEGG gene sets are tested
 runAn(params=params, icaSet=icaSetMainz, writeGenesByComp = TRUE, 
@@ -454,7 +454,7 @@ runAn(params=params, icaSet=icaSetMainz, writeGenesByComp = TRUE,
 @ 
 
 The resulting plots and data are located in the main results path, which here is the ``mainz/'' current directory:
-<<runAn, echo=TRUE>>= 
+<<runAn3, echo=TRUE>>= 
 resPath(params)
 @ 
 
@@ -815,7 +815,7 @@ clus2var
 
 
 @ 
-<<clus2var, echo=FALSE, eval=FALSE>>=
+<<clus2var2, echo=FALSE, eval=FALSE>>=
 structure(list(`1` = c(1.657e-06, 2.315e-08), `2` = c(6.775e-07, 
 0.0001899)), .Names = c("1", "2"), row.names = c("er", "grade"
 ), class = "data.frame")
