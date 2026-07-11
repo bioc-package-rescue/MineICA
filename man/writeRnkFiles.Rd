@@ -31,3 +31,9 @@
   Anne
 }
 
+\examples{
+library(MineICA)
+data(icaSetCarbayo)
+# Write the .rnk files to a temporary directory
+writeRnkFiles(icaSetCarbayo, abs = TRUE, path = tempdir())
+}

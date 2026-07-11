@@ -48,7 +48,7 @@ setMethod("initialize",
 
 
               if (length(annotation)>0)
-                  library(annotation,character.only=TRUE)
+                  requireNamespace(annotation, quietly=TRUE)
               
               .Object@mart <- mart
               

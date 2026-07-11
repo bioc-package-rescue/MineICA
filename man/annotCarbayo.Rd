@@ -4,6 +4,8 @@
 \title{Carbayo annotation  data}
 \description{
   Contains annotations for 93 samples of Carbayo data.
+\format{
+  A data frame with sample annotations.
 }
 \author{
   Anne Biton

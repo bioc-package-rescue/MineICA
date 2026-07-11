@@ -79,4 +79,21 @@ nbComp(object)
 }
 \author{Anne Biton}
 
+\examples{
+library(MineICA)
+data(icaSetCarbayo)
+# Get the sample contribution/mixing matrix
+mixing_mat <- A(icaSetCarbayo)
+head(mixing_mat)
 
+# Get the feature projection/source matrix
+source_mat <- S(icaSetCarbayo)
+head(source_mat)
+
+# Get the gene projection/source matrix
+gene_source_mat <- SByGene(icaSetCarbayo)
+head(gene_source_mat)
+
+# Get the number of components
+nbComp(icaSetCarbayo)
+}

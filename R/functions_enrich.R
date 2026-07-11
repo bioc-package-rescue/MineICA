@@ -171,7 +171,7 @@ hypergeoAn <- function ( icaSet,
     ## 2. Annotation of the selected probesets using Entrez ids
     if (length(pack.annot) > 0 && pack.annot != "" &&  substr(pack.annot, start = 1, stop = 3) != "org")  {
         pack.annot.EID <- eval(as.name(paste(gsub(".db", "", pack.annot), "ENTREZID", sep = "")))
-        library(pack.annot, character.only = TRUE)
+        requireNamespace(pack.annot, quietly = TRUE)
     }
 
     ## 3. Universe = all probe sets available on the component

@@ -47,3 +47,15 @@ witGenes(object) <- value
 }
 \author{Anne Biton}
 
+\examples{
+library(MineICA)
+data(icaSetCarbayo)
+# Get component indices
+indComp(icaSetCarbayo)
+
+# Get component names/labels
+compNames(icaSetCarbayo)
+
+# Get witness genes
+witGenes(icaSetCarbayo)
+}

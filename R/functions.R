@@ -346,7 +346,7 @@ annotInGene <- function(icaSet,
                     if (!(typeID(icaSet)["geneID_annotation"] %in% listIDs))
                         stop(paste("The element 'geneID_annotation' of attribute 'typeID' of object IcaSet is not available in annotation package,",chip))
 
-                    library(chip, character.only = TRUE)
+                    requireNamespace(chip, quietly = TRUE)
                 }
             }
             icaSet <- annotFeaturesComp(icaSet = icaSet, params=params, type = toupper(typeID(icaSet)["geneID_annotation"]))

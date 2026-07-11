@@ -38,4 +38,18 @@ geneNames(object)
 }
 \author{Anne}
 
+\examples{
+library(MineICA)
+data(icaSetCarbayo)
+# Retrieve expression data
+expr_matrix <- dat(icaSetCarbayo)
+head(expr_matrix)
 
+# Retrieve gene level expression data
+gene_expr_matrix <- datByGene(icaSetCarbayo)
+head(gene_expr_matrix)
+
+# Retrieve gene names
+geness <- geneNames(icaSetCarbayo)
+head(geness)
+}

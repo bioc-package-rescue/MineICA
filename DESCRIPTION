@@ -1,10 +1,9 @@
 Package: MineICA
 Type: Package
 Title: Analysis of an ICA decomposition obtained on genomics data
-Version: 1.53.0
+Version: 1.53.3
 Date: 2012-03-16
-Author: Anne Biton
-Maintainer: Anne Biton <anne.biton@gmail.com>
+Authors@R: person("Anne", "Biton", email = "anne.biton@gmail.com", role = c("aut", "cre"))
 Description: The goal of MineICA is to perform Independent Component
         Analysis (ICA) on multiple transcriptome datasets, integrating
         additional data (e.g molecular, clinical and pathological).
@@ -28,6 +27,6 @@ Collate: 'AllClasses.R' 'AllGeneric.R' 'methods-IcaSet.R'
         'methods-MineICAParams.R' 'compareAnalysis.R'
         'functions_comp2annot.R' 'functions_comp2annottests.R'
         'functions_enrich.R' 'functions.R' 'heatmap.plus.R'
-        'heatmapsOnSel.R' 'runAn.R' 'compareGenes.R'
+        'heatmapsOnSel.R' 'runAn.R' 'compareGenes.R' 'zzz.R'
 biocViews: Visualization, MultipleComparison
 PackageStatus: Deprecated

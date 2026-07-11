@@ -1048,7 +1048,7 @@ plotCorGraph <- function(
     else
         E(ig)$color <- "black"
     
-    lay <- layout.fruchterman.reingold(ig,niter=500,area=vcount(ig)^2.3,repulserad=vcount(ig)^100, weights = E(ig)$weight)
+    lay <- layout.fruchterman.reingold(ig,niter=500, weights = E(ig)$weight)
 
     graph <- ig
             
