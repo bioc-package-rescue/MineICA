@@ -13,6 +13,7 @@
   BeadStudio software using Quantile normalization and log2
   transformation, and are restricted to the 10000 most
   variable probe sets.
+}
 \format{
   An IcaSet object.
 }

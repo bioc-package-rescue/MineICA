@@ -4,6 +4,7 @@
 \title{Output of \code{hyperGtest}}
 \description{
   Example of output of function \code{hyperGtest}.
+}
 \format{
   An GOHyperGResult object.
 }

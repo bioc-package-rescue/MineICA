@@ -9,6 +9,7 @@
   paper using Quantile normalization and
   log2-transformation. They are restricted to the 10000
   most variable probe sets.
+}
 \format{
   A matrix of expression values.
 }

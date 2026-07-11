@@ -11,6 +11,7 @@
   components. The original expression data contain 63 tumor
   samples and were normalized by RMA with
   log2-transformation.
+}
 \format{
   An IcaSet object.
 }

@@ -14,6 +14,7 @@
   on IQR values). 10 components were computed. Only probe
   sets/genes having an absolute projection higher than 3
   are stored in this object.
+}
 \format{
   An IcaSet object.
 }
