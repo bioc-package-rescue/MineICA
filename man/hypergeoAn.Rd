@@ -45,6 +45,7 @@
   involved in the analysis indexed by their Entrez Gene
   IDs. It is only used when \code{annotation(params)} is
   empty, and allows to associate gene sets to Symbols.}
+}
 \value{
   NULL
 }
