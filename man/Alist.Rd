@@ -24,3 +24,9 @@ Alist(object)
 \author{Anne Biton}
 
 \seealso{\code{\link{class-IcaSet}}}
+
+\examples{
+library(MineICA)
+data(icaSetCarbayo)
+Alist(icaSetCarbayo)
+}

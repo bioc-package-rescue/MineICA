@@ -31,3 +31,13 @@ getComp(object, level, ind)
 \author{Anne Biton}
 
 \seealso{\code{\link{class-IcaSet}}}
+
+\examples{
+library(MineICA)
+data(icaSetCarbayo)
+# Get projections and contributions for component 1
+comp1 <- getComp(icaSetCarbayo, level = "features", ind = 1)
+names(comp1)
+head(comp1$proj)
+head(comp1$contrib)
+}

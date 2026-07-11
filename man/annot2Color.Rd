@@ -26,3 +26,11 @@
   Anne Biton
 }
 
+\examples{
+library(MineICA)
+data(icaSetCarbayo)
+annot <- pData(icaSetCarbayo)
+# Get a color representation of the sample annotations
+cols <- annot2Color(annot)
+head(cols)
+}

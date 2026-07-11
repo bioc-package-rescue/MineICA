@@ -102,3 +102,12 @@
 }
 \keyword{internal}
 
+\examples{
+\dontrun{
+library(MineICA)
+data(icaSetCarbayo)
+params <- buildMineICAParams(resPath="toy/")
+# Create an HTML report directory and file
+# writeHtmlResTestsByAnnot(params = params, icaSet = icaSetCarbayo, res = resMatrix)
+}
+}

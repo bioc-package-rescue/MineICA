@@ -26,3 +26,12 @@ SlistByGene(object)
 \author{Anne Biton}
 
 \seealso{\code{\link{class-IcaSet}}}
+
+\examples{
+library(MineICA)
+data(icaSetCarbayo)
+# Get lists of feature projections
+feature_projs <- Slist(icaSetCarbayo)
+# Get lists of gene projections
+gene_projs <- SlistByGene(icaSetCarbayo)
+}
