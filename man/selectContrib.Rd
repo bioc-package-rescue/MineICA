@@ -39,7 +39,6 @@
   kept.
 }
 \examples{
-\donttest{
 ## load an example of icaSet
 data(icaSetCarbayo)
 
@@ -68,7 +67,7 @@ contribGlist <- selectContrib(SlistByGene(icaSetCarbayo), 3)
 
 
 }
-}
+
 \author{
   Anne Biton
 }

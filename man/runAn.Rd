@@ -193,7 +193,6 @@
   \code{A} and the variables.} }
 }
 \examples{
-\donttest{
 
 ## load an example of IcaSet
 data(icaSetCarbayo)
@@ -208,7 +207,7 @@ require(hgu133a.db)
 
 runAn(params=params, icaSet=icaSetCarbayo)
 }
-}
+
 \author{
   Anne Biton
 }

@@ -59,7 +59,6 @@
   different IcaSet objects.
 }
 \examples{
-\donttest{
 data(icaSetCarbayo)
 mart <- useMart("ensembl", "hsapiens_gene_ensembl")
 
@@ -70,7 +69,7 @@ compareGenes(keepCompByIcaSet = c(9,4), icaSets = list(icaSetCarbayo, icaSetCarb
              lab=c("Carbayo", "Carbayo2"), cutoff=3, type="union",  mart=mart)
 
 }
-}
+
 \author{
   Anne Biton
 }

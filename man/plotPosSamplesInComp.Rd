@@ -74,7 +74,6 @@
   of these tests are available in the title of each plot.
 }
 \examples{
-\donttest{
 ## load an example of IcaSet
 data(icaSetCarbayo)
 
@@ -92,7 +91,7 @@ plotPosSamplesInComp(samplesByGroup=samplesByGroup, icaSet=icaSetCarbayo, funClu
                      resClus = resClus, keepComp=5)
 dev.off()
 }
-}
+
 \author{
   Anne Biton
 }

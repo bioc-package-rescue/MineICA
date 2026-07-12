@@ -93,7 +93,6 @@
   universe annotated for the gene set.}}
 }
 \examples{
-\donttest{
 # Load examples of IcaSet object
 data(icaSetCarbayo)
 
@@ -106,7 +105,7 @@ params <- buildMineICAParams(resPath="carbayo/", selCutoff=3)
 runEnrich(params=params,icaSet=icaSetCarbayo[,,1:2],dbs="GO", ontos="BP")
 
 }
-}
+
 \author{
   Anne Biton
 }

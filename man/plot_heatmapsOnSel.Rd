@@ -107,7 +107,6 @@
   Ward's method.
 }
 \examples{
-\donttest{
 ## load an example of IcaSet object
 data(icaSetCarbayo)
 
@@ -134,7 +133,7 @@ plot_heatmapsOnSel(icaSet = icaSetCarbayo, selCutoff = 2, level = "features", ke
 
 
 }
-}
+
 \author{
   Anne Biton
 }

@@ -56,7 +56,6 @@ See function \code{\link{writeGenes}} for details.
   (columns).}}
 }
 \examples{
-\donttest{
 ## load IcaSet object
 ## We will use 'icaSetCarbayo', whose features are hgu133a probe sets
 ## and feature annotations are Gene Symbols. 
@@ -84,7 +83,6 @@ genesPath(params) <- paste(resPath(params),"comp2features/",sep="")
 res <- writeProjByComp(icaSet=icaSetCarbayo, params=params, mart=mart,
            level="features") #, typeId="affy_hg_u133a")
 
-}
 }
 
 \author{Anne Biton}

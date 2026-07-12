@@ -107,7 +107,6 @@
   use \code{by="component"}.
 }
 \examples{
-\donttest{
 ## load an example of IcaSet
 data(icaSetCarbayo)
 
@@ -120,7 +119,7 @@ plotPosAnnotInComp(icaSet=icaSetCarbayo, keepVar=c("SEX","STAGE"), keepComp=1:2,
 # specifiy arg 'pathPlot' to save the pdf in another directory, but make sure it exists before
 # specifiy arg 'by="comp"' to create one pdf file per component
 }
-}
+
 \author{
   Anne Biton
 }

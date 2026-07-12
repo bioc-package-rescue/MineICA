@@ -68,7 +68,6 @@
   \code{path}/\code{db}/\code{onto}/\code{zvalCutoff(params)}.
 }
 \examples{
-\donttest{
 ## load an example of IcaSet
 data(icaSetCarbayo)
 
@@ -90,7 +89,7 @@ universe <- as.character(na.omit(unique(unlist(AnnotationDbi::mget(featureNames(
 # run the actual enrichment analysis
 hypergeoAn(icaSet=icaSetCarbayo[,,1], params=params, db="GO",onto="BP", universe=universe)
 }
-}
+
 \author{
   Anne Biton
 }
