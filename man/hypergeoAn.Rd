@@ -79,6 +79,7 @@ params <- buildMineICAParams(resPath="~/resMineICACarbayo/", selCutoff=3)
 ## Annotation package for IcaSetCarbayo is hgu133a.db.
 # check annotation package
 annotation(icaSetCarbayo)
+require(hgu133a.db)
 
 ## Define universe, i.e the set of EntrezGene IDs mapping to the feature IDs of the IcaSet object.
 universe <- as.character(na.omit(unique(unlist(AnnotationDbi::mget(featureNames(icaSetCarbayo),
