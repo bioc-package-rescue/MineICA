@@ -136,12 +136,13 @@ params <- buildMineICAParams(resPath="mainz/")
 
 # fill typeID, Mainz data originate from affymetrix HG-U133a  microarray and are indexed by probe sets
 # we want to annotate the probe sets into Gene Symbols
-typeIDmainz <-  c(geneID_annotation="SYMBOL", geneID_biomart="hgnc_symbol", featureID_biomart="affy_hg_u133a")
+typeIDmainz <-  c(geneID_annotation="SYMBOL", geneID_biomart="hgnc_symbol", featureID_biomart="affy_hg_u133a_2")
 
+#build a new IcaSet object
 icaSetMainz <- buildIcaSet(params=params, A=data.frame(resJade$A), S=data.frame(resJade$S),
                              dat=exprs(mainz), pData=pData(mainz),
                              annotation="hgu133a.db", typeID= c(geneID_annotation = "SYMBOL",
-                             geneID_biomart = "hgnc_symbol", featureID_biomart = "affy_hg_u133a"),
+                             geneID_biomart = "hgnc_symbol", featureID_biomart = "affy_hg_u133a_2"),
                              chipManu = "affymetrix", runAnnot=TRUE,
                              mart=useMart(biomart="ensembl", dataset="hsapiens_gene_ensembl"))
 }

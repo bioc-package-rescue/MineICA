@@ -246,7 +246,7 @@ Here we will use \verb$geneID_biomart='hgnc_symbol'$ for Gene Symbols.
 <<martattr, echo=TRUE, print=FALSE>>=
 listAttributes(mart)[grep(x=listAttributes(mart)[,1],pattern="affy")[1:5],]
 @
-HG-U133A probe sets correspond to \verb$affy_hg_u133a$. \\
+HG-U133A probe sets correspond to \verb$affy_hg_u133a_2$. \\
 
 
 % \Rpackage{MineICA} makes use of \Rpackage{biomaRt} to get a description of the features and/or gene ids that contribute to each component. 
@@ -271,7 +271,7 @@ Data can also be provided at the final annotation level (e.g \verb$dat$ and \ver
 ## and are indexed by probe sets.
 ## The probe sets are annotated into Gene Symbols
 typeIDmainz <-  c(geneID_annotation="SYMBOL", geneID_biomart="hgnc_symbol", 
-                    featureID_biomart="affy_hg_u133a")
+                    featureID_biomart="affy_hg_u133a_2")
 
 ## define the reference samples if any, here no normal sample is available
 refSamplesMainz <- character(0)

@@ -83,7 +83,7 @@ params <- buildMineICAParams(resPath="mainz/")
 icaSetMainz <- buildIcaSet(params=params, A=data.frame(resJade$A), S=data.frame(resJade$S),
                              dat=exprs(mainz), pData=pData(mainz),
                              annotation="hgu133a.db", typeID= c(geneID_annotation = "SYMBOL",
-                             geneID_biomart = "hgnc_symbol", featureID_biomart = "affy_hg_u133a"),
+                             geneID_biomart = "hgnc_symbol", featureID_biomart = "affy_hg_u133a_2"),
                              chipManu = "affymetrix", runAnnot=FALSE,
                              mart=useMart(biomart="ensembl", dataset="hsapiens_gene_ensembl"))
 

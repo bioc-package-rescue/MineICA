@@ -316,7 +316,7 @@ getProj <- function(icaSet,ids,keepComp, level = c("features","genes")) {
 ##' icaSetMainz <- buildIcaSet(params=params, A=data.frame(resJade$A), S=data.frame(resJade$S),
 ##'                              dat=exprs(mainz), pData=pData(mainz),
 ##'                              annotation="hgu133a.db", typeID= c(geneID_annotation = "SYMBOL",
-##'                              geneID_biomart = "hgnc_symbol", featureID_biomart = "affy_hg_u133a"),
+##'                              geneID_biomart = "hgnc_symbol", featureID_biomart = "affy_hg_u133a_2"),
 ##'                              chipManu = "affymetrix", runAnnot=FALSE,
 ##'                              mart=useMart(biomart="ensembl", dataset="hsapiens_gene_ensembl"))
 ##'
@@ -692,7 +692,7 @@ annotFeaturesComp <- function(icaSet,
 ##'
 ##' # annotate a set of HG-U133a probe sets IDs into Gene Symbols
 ##' annotFeaturesWithBiomaRt(features = c("1007_s_at", "1053_at", "117_at", "121_at", "1255_g_at"),
-##' featureId="affy_hg_u133a", geneId="hgnc_symbol", mart=mart)
+##' featureId="affy_hg_u133a_2", geneId="hgnc_symbol", mart=mart)
 ##' 
 ##' # annotate a set of Ensembl Gene IDs into Gene Symbols
 ##' annotFeaturesWithBiomaRt(features = c("ENSG00000101412", "ENSG00000112242",
@@ -1636,12 +1636,12 @@ buildMineICAParams <- function (Sfile = new("character"), Afile=new("character")
 ##' 
 ##' # fill typeID, Mainz data originate from affymetrix HG-U133a  microarray and are indexed by probe sets
 ##' # we want to annotate the probe sets into Gene Symbols
-##' typeIDmainz <-  c(geneID_annotation="SYMBOL", geneID_biomart="hgnc_symbol", featureID_biomart="affy_hg_u133a")
+##' typeIDmainz <-  c(geneID_annotation="SYMBOL", geneID_biomart="hgnc_symbol", featureID_biomart="affy_hg_u133a_2")
 ##' 
 ##' icaSetMainz <- buildIcaSet(params=params, A=data.frame(resJade$A), S=data.frame(resJade$S),
 ##'                              dat=exprs(mainz), pData=pData(mainz),
 ##'                              annotation="hgu133a.db", typeID= c(geneID_annotation = "SYMBOL",
-##'                              geneID_biomart = "hgnc_symbol", featureID_biomart = "affy_hg_u133a"),
+##'                              geneID_biomart = "hgnc_symbol", featureID_biomart = "affy_hg_u133a_2"),
 ##'                              chipManu = "affymetrix", runAnnot=TRUE,
 ##'                              mart=useMart(biomart="ensembl", dataset="hsapiens_gene_ensembl"))
 ##' }

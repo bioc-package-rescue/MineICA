@@ -81,7 +81,7 @@ res <- writeProjByComp(icaSet=icaSetCarbayo, params=params, mart=mart,
 # change attribute 'genesPath' of params to preserve the gene descriptions
 genesPath(params) <- paste(resPath(params),"comp2features/",sep="")
 res <- writeProjByComp(icaSet=icaSetCarbayo, params=params, mart=mart,
-           level="features") #, typeId="affy_hg_u133a")
+           level="features", typeId="affy_hg_u133a_2")
 
 }
 
