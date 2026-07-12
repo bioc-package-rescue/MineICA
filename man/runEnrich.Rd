@@ -102,6 +102,7 @@ data(icaSetCarbayo)
 params <- buildMineICAParams(resPath="carbayo/", selCutoff=3)
 
 ## Run enrichment analysis on the first two components contained in the icaSet object 'icaSetCarbayo'
+require(hgu133a.db)
 runEnrich(params=params,icaSet=icaSetCarbayo[,,1:2],dbs="GO", ontos="BP")
 
 }
