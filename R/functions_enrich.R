@@ -271,8 +271,8 @@ function(hgOver, universe, db = c("GO","KEGG"), onto = c("CC", "MF", "BP"), anno
   db <- match.arg(tolower(db), choices = c("go","kegg"))
   onto <- match.arg(toupper(onto), choices = c("CC", "MF", "BP"))
 
-  a <- GOstats::geneIdsByCategory(hgOver)
-  b <- GOstats::geneIdUniverse(hgOver, cond=conditional(hgOver))
+  a <- Category::geneIdsByCategory(hgOver)
+  b <- Category::geneIdUniverse(hgOver, cond=conditional(hgOver))
 
   a <- a[sigCategories(hgOver)]
   b <- b[sigCategories(hgOver)]
