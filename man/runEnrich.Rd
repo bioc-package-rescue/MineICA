@@ -93,7 +93,7 @@
   universe annotated for the gene set.}}
 }
 \examples{
-\dontrun{
+\donttest{
 # Load examples of IcaSet object
 data(icaSetCarbayo)
 

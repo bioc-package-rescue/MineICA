@@ -56,7 +56,7 @@ See function \code{\link{writeGenes}} for details.
   (columns).}}
 }
 \examples{
-\dontrun{
+\donttest{
 ## load IcaSet object
 ## We will use 'icaSetCarbayo', whose features are hgu133a probe sets
 ## and feature annotations are Gene Symbols. 

@@ -59,7 +59,7 @@
   different IcaSet objects.
 }
 \examples{
-\dontrun{
+\donttest{
 data(icaSetCarbayo)
 mart <- useMart("ensembl", "hsapiens_gene_ensembl")
 

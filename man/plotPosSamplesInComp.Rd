@@ -74,7 +74,7 @@
   of these tests are available in the title of each plot.
 }
 \examples{
-\dontrun{
+\donttest{
 ## load an example of IcaSet
 data(icaSetCarbayo)
 

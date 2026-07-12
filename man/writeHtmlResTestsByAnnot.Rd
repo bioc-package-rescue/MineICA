@@ -103,7 +103,7 @@
 \keyword{internal}
 
 \examples{
-\dontrun{
+\donttest{
 library(MineICA)
 data(icaSetCarbayo)
 params <- buildMineICAParams(resPath="toy/")

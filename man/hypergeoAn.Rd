@@ -68,7 +68,7 @@
   \code{path}/\code{db}/\code{onto}/\code{zvalCutoff(params)}.
 }
 \examples{
-\dontrun{
+\donttest{
 ## load an example of IcaSet
 data(icaSetCarbayo)
 

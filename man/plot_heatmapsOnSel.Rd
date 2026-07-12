@@ -107,7 +107,7 @@
   Ward's method.
 }
 \examples{
-\dontrun{
+\donttest{
 ## load an example of IcaSet object
 data(icaSetCarbayo)
 

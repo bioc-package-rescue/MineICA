@@ -107,7 +107,7 @@
   use \code{by="component"}.
 }
 \examples{
-\dontrun{
+\donttest{
 ## load an example of IcaSet
 data(icaSetCarbayo)
 

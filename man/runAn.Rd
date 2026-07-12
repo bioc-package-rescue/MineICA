@@ -193,7 +193,7 @@
   \code{A} and the variables.} }
 }
 \examples{
-\dontrun{
+\donttest{
 
 ## load an example of IcaSet
 data(icaSetCarbayo)

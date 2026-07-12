@@ -39,7 +39,7 @@
   kept.
 }
 \examples{
-\dontrun{
+\donttest{
 ## load an example of icaSet
 data(icaSetCarbayo)
 
